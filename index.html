@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kishore Pasupula — Portfolio</title>
+  <meta name="description" content="Kishore Pasupula — Full Stack Java Developer. Projects: ShopNest, Hate Speech Detection using NLP & ML. Contact: pasupulakishorebabu@gmail.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #f8fafb;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5a4;
+      --glass: rgba(14,165,164,0.06);
+      --shadow: 0 6px 18px rgba(15,23,42,0.06);
+      font-family: 'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px;
+    }
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:18px;align-items:center}
+    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:var(--shadow)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px}
+
+    /* Left column */
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .section{margin-bottom:18px}
+    .tag{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--accent);font-size:13px}
+    .about p{margin-top:10px;color:var(--muted)}
+
+    /* Projects */
+    .projects .proj{padding:14px;border-radius:10px;background:white;margin-bottom:12px;border:1px solid #eef2f6}
+    .proj h3{margin:0;font-size:16px}
+    .proj p{margin:6px 0 10px;color:var(--muted);font-size:14px}
+    .tech{font-size:13px;color:var(--muted)}
+
+    /* Right column */
+    .sidebar .meta{display:grid;gap:8px}
+    .meta-item{padding:12px;border-radius:10px;background:white;border:1px solid #eef2f6}
+    .meta-item h4{margin:0 0 6px;font-size:13px;color:var(--muted)}
+    .meta-item p{margin:0;font-weight:600}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{padding:8px 10px;border-radius:8px;background:var(--card);font-weight:600;font-size:13px}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      main{grid-template-columns:1fr;}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+    }
+
+    /* Small utilities */
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(14,165,164,0.12);background:linear-gradient(180deg,rgba(14,165,164,0.06),transparent);}
+    a.link{color:var(--accent);text-decoration:none;font-weight:600}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">KP</div>
+        <div>
+          <h1>Kishore Pasupula</h1>
+          <p class="lead">Full Stack Java Developer — MCA | Projects: ShopNest, NLP/ML</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <!-- About -->
+        <section id="about" class="card section about">
+          <span class="tag">Full Stack Java</span>
+          <h2 style="margin-top:12px">About Me</h2>
+          <p>I am an original thinker with an optimistic outlook. I enjoy working in teams and on multidisciplinary projects. I am looking for a challenging position in a reputed organization where I can learn new skills and leverage my existing knowledge.</p>
+
+          <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap">
+            <div style="min-width:160px">
+              <h4 style="margin:0;color:var(--muted);font-size:13px">Location</h4>
+              <p style="margin:6px 0 0;font-weight:700">Bangalore, 560037</p>
+            </div>
+            <div style="min-width:160px">
+              <h4 style="margin:0;color:var(--muted);font-size:13px">Availability</h4>
+              <p style="margin:6px 0 0;font-weight:700">Open to opportunities</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="card section projects">
+          <h2>Projects</h2>
+
+          <article class="proj">
+            <h3>ShopNest — E-commerce Full Stack App</h3>
+            <p>ShopNest is a full stack e-commerce web application with admin product management, user registration/login, cart and checkout functionality.</p>
+            <div class="tech">Tech: Java EE, Servlets, JSP, JDBC, CSS, Oracle DBMS</div>
+          </article>
+
+          <article class="proj">
+            <h3>Identification of Hate Speech — NLP & ML</h3>
+            <p>A project to detect hate speech on social media using Natural Language Processing and Logistic Regression achieving strong accuracy for content moderation.</p>
+            <div class="tech">Tech: Python (NLP), Scikit-learn, Text Processing, Model Evaluation</div>
+          </article>
+
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="card section">
+          <h2>Education</h2>
+          <p style="margin:6px 0 0"><strong>MCA</strong> — Madanapalle Institute of Technology and Science (2023) • CGPA: 8.14</p>
+          <p style="margin:6px 0 0"><strong>B.Sc</strong> — Shri Gnanambica Degree College (2021) • CGPA: 8.50</p>
+        </section>
+
+        <section class="card section">
+          <h2>Certifications</h2>
+          <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+            <li>Java Full Stack Development and Testing</li>
+            <li>Python for Beginners</li>
+            <li>Developer Certification on Responsive Web Design</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- Right sidebar -->
+      <aside class="sidebar">
+        <div class="meta">
+          <div class="meta-item">
+            <h4>Contact</h4>
+            <p>Phone: <a class="link" href="tel:+917780414373">+91 77804 14373</a></p>
+            <p>Email: <a class="link" href="mailto:pasupulakishorebabu@gmail.com">pasupulakishorebabu@gmail.com</a></p>
+          </div>
+
+          <div class="meta-item">
+            <h4>Links</h4>
+            <p><a class="link" href="https://www.linkedin.com/in/kishore-pasupulaaa4619170" target="_blank" rel="noopener">LinkedIn</a></p>
+            <p><a class="link" href="https://github.com/Kishore-Pasupula" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+
+          <div class="meta-item">
+            <h4>Skills</h4>
+            <div class="skills" style="margin-top:8px">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">HTML</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Servlets & JSP</span>
+              <span class="chip">NLP & ML</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <h4>Internship</h4>
+            <p>Kodnest Technologies — Full Stack Java Intern (Aug 2023 - Feb 2024)</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer id="contact">
+      <p>Want to connect? Email <a class="link" href="mailto:pasupulakishorebabu@gmail.com">pasupulakishorebabu@gmail.com</a> or call <a class="link" href="tel:+917780414373">+91 77804 14373</a>.</p>
+      <p style="margin-top:8px;font-size:13px;color:var(--muted)">© Kishore Pasupula — Built with ♥ • Simple HTML/CSS portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
